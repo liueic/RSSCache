@@ -6,9 +6,12 @@
 
 ## 部署
 
-在 Release 页面下载构建好的二进制文件
+你需要自己配置好 Golang 的基础环境：
 
 ```bash
+git clone https://github.com/liueic/RSSCache.git
+go mod tidy
+go build
 ./RSSCache -url "https://example.com/rss.xml" -port 8080
 ```
 
